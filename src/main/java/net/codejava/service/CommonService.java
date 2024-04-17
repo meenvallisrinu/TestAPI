@@ -46,15 +46,15 @@ public class CommonService {
   {
 	  appIdMap=new HashMap<Integer,Application>();
   // Creating some objects of Country while initializing
-   Application rm=new Application(71272, "RM");
-   Application ra=new Application(71278, "RA");
-   Application ca=new Application(17303, "CA");
+   Application r1=new Application(712, "r1");
+   Application r2=new Application(713, "r2");
+   Application c1=new Application(172, "c1");
 
 
 
-   appIdMap.put(71272,rm);
-   appIdMap.put(71278,ra);
-   appIdMap.put(17303,ca);
+   appIdMap.put(712,r1);
+   appIdMap.put(713,r2);
+   appIdMap.put(172,c1);
 
   }
   
@@ -78,8 +78,8 @@ public class CommonService {
   List<Server> servers = new ArrayList<Server>();
   System.out.println("appId:"+appId  + ">>>envId:"+envId);
   
-  servers.add(new Server(1101,"ah104"));
-  servers.add(new Server(1105,"ah105"));
+  servers.add(new Server(1101,"101"));
+  servers.add(new Server(1105,"102"));
   return servers;
  }
 
