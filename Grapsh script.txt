@@ -33,3 +33,13 @@ flowchart LR
 
     classDef startend fill:#f9f,stroke:#333,stroke-width:4px;
     class A,AA,AAA,F,H,N startend;
+
+
+
+https://scholar.google.co.in/scholar?q=patents+on+Generative+adversive+networks+on+Test+case+generation&hl=en&as_sdt=0&as_vis=1&oi=scholar
+
+https://patents.google.com/patent/US20190286950A1/en
+https://patents.google.com/patent/US20210150354A1/en
+https://www.indium.tech/blog/automated-test-case-generation-using-gans/
+https://www.researchgate.net/publication/326665744_Data_synthesis_based_on_generative_adversarial_networks
+https://www.vldb.org/pvldb/vol11/p1071-park.pdf
