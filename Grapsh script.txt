@@ -1,0 +1,35 @@
+
+	
+flowchart LR
+    A[Logs]  -->A1[Input];
+    AA[/UI Screens/] --> A1;
+    AAA[/Design  Document/] --> A1;
+    A1 --> B[Feature Extraction];
+    
+    B --> C[Normalized Feature Vector]
+    C --> D[Random Noise 
+        Input to GAN Model ]
+    D --> E[Generator G]
+    E--> F[Random Test Cases]
+    F --> G[Discriminator D]
+    H[Real Test Cases] --> G
+    G --> I[Discriminator Feedback: 
+            Real/Fake]
+    I --> J[Loss Calculation]
+    J --> K[Update Generator 
+            and Discriminator]
+    K --> D
+    K --> E
+    K --> G
+
+    %% Description of each node
+    A1 --> L[Extract Timestamp, Event Type, Message, Requirement ];
+ 
+    B --> M[Apply MinMaxScaler for Normalization]
+ 
+    D --> N[Generate Final Test Cases]
+    G --> O[Real or Fake?]
+
+
+    classDef startend fill:#f9f,stroke:#333,stroke-width:4px;
+    class A,AA,AAA,F,H,N startend;
